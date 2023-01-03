@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: discovery
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+  profiles:
+    active: local
+  config:
+    import: optional:configserver:http://localhost:8001
+
